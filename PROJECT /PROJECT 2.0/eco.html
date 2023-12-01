@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="animations.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Savings</title>
+    <style>
+
+
+
+/* Basic styling, customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.event {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px;
+}
+
+.event-media {
+    flex: 1;
+}
+
+.event-media img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-media video {
+    max-width: 100%;
+}
+
+.event-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.event h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.event p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+        /* Styles for the ENERGY SAVINGS heading */
+#energy-savings-header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add margin to increase spacing */
+}
+
+/* Add a subtle animation effect on hover */
+#energy-savings-header:hover {
+    background-color: #0057a3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+        /* Styles for the ENERGY SAVINGS heading */
+#energy-savings-header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Add a subtle animation effect on hover */
+#energy-savings-header:hover {
+    background-color: #0057a3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* CSS for styling the "HOW TO REDUCE ENERGY WASTAGE" heading */
+#reduce-energy-wastage {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#reduce-energy-wastage h2 {
+    text-transform: uppercase;
+    color: #0078d4;
+    margin-bottom: 20px;
+}
+
+
+
+/* CSS for styling the Selected section */
+#selected-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#selected-details h2 {
+    text-transform: uppercase;
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+
+/* CSS for styling the appliance details table */
+#appliance-table {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#appliance-table h2 {
+    font-size: 24px;
+    color: #0078d4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #0078d4;
+}
+
+button[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0055a2;
+}
+
+/* Style for table rows on hover */
+table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+
+/* CSS for styling the appliance dropdown */
+#appliance-dropdown {
+    text-align: center;
+    margin-top: 40px; /* Add margin for spacing */
+}
+
+#appliance-dropdown h2 {
+    font-size: 24px;
+    color: #0078d4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #0078d4;
+    color: #fff;
+}
+
+/* Show the dropdown content when the button is hovered over */
+.dropdown-btn:hover + .dropdown-content {
+    display: block;
+}
+
+/* Show the dropdown content when the button is focused */
+.dropdown-btn:focus + .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* CSS for the loading screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+.button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0055a2;
+}
+
+
+        /* CSS for changing the background color to blue */
+body {
+    background-color: #0078d4; /* Use your preferred shade of blue */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: Arial, sans-serif; /* Use a preferred font stack */
+    color: #fff; /* Set text color to white or a contrasting color */
+}
+        /* CSS for the "Testimonials" section and testimonial boxes */
+#testimonials {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonial-box {
+    flex: 0 1 calc(30% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Add more styling as needed */
+
+
+/* CSS for the combined "Testimonials" and "Boxes" section */
+#testimonials {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.testimonials-button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.testimonials-button:hover {
+    background-color: #0055a2;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial {
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.benefit {
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.benefit h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
+/* Add more styling as needed */
+
+
+
+/* CSS for the "Address" box */
+.address-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px; /* Add spacing between the contact form and the address box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.address-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+address {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Add more styling as needed */
+
+/* CSS for the "Contact Us" section */
+#contact {
+    text-align: center; /* Center-align the content horizontally */
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto; /* Center the contact box horizontally within the section */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.contact-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Add more styling as needed */
+
+
+
+
+
+
+        #testimonials {
+    text-align: center; /* Center-align the content horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* CSS for the testimonial boxes */
+#testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonial {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust the width and spacing */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 16px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Add more styling as needed */
+
+/* CSS for the benefit boxes */
+#benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.benefit {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust the width and spacing */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.benefit h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
+/* Add more styling as needed */
+
+/* CSS for the "Get Started" button */
+.get-started-button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-started-button:hover {
+    background-color: #0055a2;
+}
+
+
+    /* CSS for the "About Us" section */
+#about {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add spacing between the photo and text */
+}
+
+.about-text {
+    flex: 1;
+}
+
+        /* CSS for the "About Us" section */
+#about {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.about-photo {
+    float: left;
+    width: 40%; /* Adjust the width as needed */
+    margin-right: 20px; /* Add spacing between the photo and text */
+}
+
+.about-text {
+    float: left;
+    width: 60%; /* Adjust the width as needed */
+}
+
+/* Clear the floats to prevent layout issues */
+#about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+        /* Paste your CSS code here */
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #000000;
+        }
+
+
+    * CSS for styling dropdown options vertically */
+#dropdown-options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dropdown {
+    text-align: left; /* Left-align the dropdown labels */
+    margin: 0 20px;
+    display: block; /* Display as block elements */
+    margin-bottom: 20px; /* Add space between dropdowns */
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    width: 100%; /* Make the dropdowns full-width */
+}
+
+select:hover {
+    border-color: #0078d4;
+}
+
+select:focus {
+    border-color: #0078d4;
+    outline: none}
+
+
+/* CSS for styling the Saved Tips section */
+#saved-tips {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#saved-tips h3 {
+    text-transform: uppercase;
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+#saved-tips-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#saved-tips-list li {
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+}
+
+
+
+/* CSS for styling the sections */
+#faqs,
+#any-doubts,
+#feedback {
+    margin-top: 40px;
+}
+
+#faqs h2,
+#any-doubts h2,
+#feedback h2 {
+    text-transform: uppercase;
+    color: #0078d4;
+    margin-bottom: 20px;
+}
+
+#faqs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#faqs ul li {
+    margin: 10px 0;
+}
+
+#any-doubts p,
+#feedback p {
+    font-size: 16px;
+}
+
+#any-doubts a,
+#feedback a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+#any-doubts a:hover,
+#feedback a:hover {
+    text-decoration: underline;
+}
+
+
+/* CSS for styling the sections */
+#faqs,
+#any-doubts,
+#feedback {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#faqs h2,
+#any-doubts h2,
+#feedback h2 {
+    text-transform: uppercase;
+    color: #0078d4;
+    margin-bottom: 20px;
+}
+
+#faqs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#faqs ul li {
+    margin: 10px 0;
+}
+
+#any-doubts p,
+#feedback p {
+    font-size: 16px;
+}
+
+#any-doubts a,
+#feedback a {
+    color: #0078d4;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+#any-doubts a:hover,
+#feedback a:hover {
+    color: #0055a2; /* Change color to a slightly darker shade on hover */
+    text-decoration: underline;
+}
+
+/* Center-align the doubt form */
+#doubt-form {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+#doubt-form h3 {
+    text-transform: uppercase;
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+#doubt-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#doubt-form button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* CSS for styling the footer */
+footer {
+    position: relative;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.social-link {
+    margin-right: 10px; /* Add some spacing between the icons and text */
+}
+
+/* Style for the icons (you can customize this) */
+.social-link i {
+    font-size: 24px; /* Adjust the icon size as needed */
+}
+/* CSS for enhancing social media icons */
+.social-link i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.social-link:hover i {
+    transform: scale(1.2); /* Scale the icon up on hover (adjust as needed) */
+}
+
+/* CSS for animations */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-fade-in.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add a transition effect to buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0055a2;
+}
+/* Navigation bar styles */
+#navbar {
+    background-color: #0078d4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin-right: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #0055a2;
+}
+#saved-tips {
+    color: lightblue;
+
+
+}
+#join-community {
+    color: blue;
+}
+
+
+#hero {
+    color: ;
+}
+
+
+
+
+
+    </style>
+    
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+   
+    <header style="position: relative;">
+
+        
+    <img src="image.png" alt="Microsoft Student Community Logo" width="100" height="90">
+    <img src="bg_image_2.jpg" alt="Profile Picture" width="40" height="40" style="position: absolute; top: 10px; right: 10px; border-radius: 50%;">
+    <nav>
+
+     <h1><center>ECOSPARK SOLUTIONS</h1></center>
+    
+    <nav>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+                         
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="http://localhost/ebill/index.php">Calculation Of Units</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="teammembers.html">Team Members</a></li>
+         </ul>   
+    </nav>
+</header>
+
+<!-- Example element to animate -->
+<div class="animate-fade-in">
+    <!-- Content -->
+</div>
+
+
+
+
+    <section id="hero">
+        <h1>WELCOME TO ECOSPARK SOLUTIONS</h1>
+        <p>Empowering Students and Tech Enthusiasts with Energy Savings and how to reduce the carbon footprints.</p>
+        <a href="registrationpage.html">Join Now</a>
+    </section>
+
+
+
+
+    <!-- Dropdown for Appliances -->
+    <section id="appliance-dropdown">
+        <h2>List of Appliances</h2>
+        <div class="dropdown">
+            <center><button class="dropdown-btn">Select Appliance</button>
+            <div class="dropdown-content">
+                <a href="#">Refrigerator</a>
+                <a href="#">Washing Machine</a>
+                <a href="#">Microwave Oven</a>
+                <a href="#">Television</a>
+                <a href="#">Coffee Maker</a>
+                <a href="#">Air Conditioner</a>
+                <a href="#">Chimney</a>
+                <a href="#">Motor</a>
+                <a href="#">Water Cooler</a>
+                
+                <!-- Add more appliance options as needed -->
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Selected Appliances -->
+    <section id="selected-appliances">
+        <h2>Selected Appliances</h2>
+        <ul id="selected-appliances-list">
+            <!-- Selected appliances will be displayed here -->
+        </ul>
+    </section>
+
+
+
+
+
+
+ <!-- Table for Appliance Details -->
+    <section id="appliance-table">
+        <h2>Appliance Details</h2>
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Appliance</th>
+                        <th>Number</th>
+                        <th>Power Supply</th>
+                        <th>Appliance Reading</th>
+                        <th>Time in Hours</th>
+                        <th>Days</th>
+                        <th>Necessary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="appliance"></td>
+                        <td><input type="number" name="number"></td>
+                        <td><input type="text" name="power-supply"></td>
+                        <td><input type="text" name="appliance-reading"></td>
+                        <td><input type="number" name="time-in-hours"></td>
+                        <td><input type="number" name="days"></td>
+                        <td><select name="necessary">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select></td>
+                    </tr>
+                    <!-- Additional rows can be added here for more appliances -->
+                </tbody>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+
+
+
+
+<!-- How to Reduce Energy Wastage section -->
+<section id="reduce-energy-wastage">
+    <h2>HOW TO REDUCE ENERGY WASTAGE</h2>
+    <div class="text-area-container">
+        <textarea id="energy-wastage-textarea" rows="6" placeholder="Type here..."></textarea>
+        <button id="save-button">Save</button>
+        <h2>Saved Tips</h2>
+    <ul id="saved-tips-list">
+        <!-- Saved tips will be displayed here -->
+    </ul>
+    </div>
+</section>
+
+<!-- Saved Tips section -->
+<section id="saved-tips">
+    
+</section>
+
+
+<!-- Dropdown options -->
+    <section id="dropdown-options">
+        <div class="dropdown">
+            <label for="state">Select the State:</label>
+            <select id="state" name="state">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <!-- Add more state options if needed -->
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="board">Select the Board:</label>
+            <select id="board" name="board">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <!-- Add more board options if needed -->
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="appliances">Select the Appliances:</label>
+            <select id="appliances" name="appliances">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <!-- Add more appliance options if needed -->
+            </select>
+        </div>
+    </section>
+
+
+
+
+
+
+<!-- FAQs section -->
+<section id="faqs">
+    <h2>FAQs</h2>
+    <ul>
+        <li>
+            <strong>Q1:</strong> What is the Microsoft Student Community?
+            <a href="#faq1-answer">[View Answer]</a>
+        </li>
+        <li>
+            <strong>Q2:</strong> How can I join the community?
+            <a href="#faq2-answer">[View Answer]</a>
+        </li>
+        <li>
+            <strong>Q3:</strong> What benefits do members get?
+            <a href="#faq3-answer">[View Answer]</a>
+        </li>
+        <li>
+            <strong>Q4:</strong> Is membership free?
+            <a href="#faq4-answer">[View Answer]</a>
+        </li>
+        <li>
+            <strong>Q5:</strong> How often are events organized?
+            <a href="#faq5-answer">[View Answer]</a>
+        </li>
+        <!-- Add more FAQs as needed -->
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ANY DOUBTS section -->
+<section id="any-doubts">
+    <h2>ANY DOUBTS</h2>
+    <p>If you have any doubts or questions, feel free to <a href="doubt.html">ask us</a>.</p>
+</section>
+
+<!-- FEEDBACK section -->
+<section id="feedback">
+    <h2>FEEDBACK</h2>
+    <p>Provide your valuable feedback <a href="feedback.html">here</a>.</p>
+</section>
+
+
+<!-- Doubt Form (placeholder) -->
+<div id="doubt-form">
+    <h3>Ask a Doubt</h3>
+    <form>
+        <!-- Add your form fields here (e.g., name, email, question) -->
+        <textarea placeholder="Type your doubt here..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+
+
+
+    
+
+
+   
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+   
+<section id="join-community">
+        
+        <h2><center>JOIN THE COMMUNITY</h2></center>
+  
+
+        <p><center>Get involved and stay updated with the latest saving tips.</p></center>
+        <a href="signup.html"><center>Sign Up</a></center>
+    </section>
+
+
+
+
+<!-- Footer section -->
+<footer>
+    <div class="social-media">
+        <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <!-- Add more social media links as needed -->
+    </div>
+    <p>&copy; 2023 MSC MSIT WEB DEV TEAM. <br>All Rights Reserved.</p>
+</footer>
+
+
+   <script src="animations.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
