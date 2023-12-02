@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        /* Basic styling, customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0078d4;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0057a3;
+}
+
+#user-list {
+    list-style: none;
+    padding: 0;
+}
+
+#user-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styling for iframes */
+iframe {
+    width: 100%;
+    height: 400px;
+}
+</style>
+
+<script>
+    // JavaScript for user registration and data display
+document.addEventListener("DOMContentLoaded", function () {
+    const registrationForm = document.getElementById("registration-form");
+    const userList = document.getElementById("user-list");
+
+    registrationForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get user input
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Create a new list item to display user data
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<strong>Username:</strong> ${username}, <strong>Email:</strong> ${email}, <strong>Password:</strong> ${password}`;
+        userList.appendChild(listItem);
+
+        // Clear form fields
+        registrationForm.reset();
+    });
+});
+</script>   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Registration Form -->
+    <section id="registration">
+        <h2>User Sign Up</h2>
+        <form id="registration-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- User Data Display -->
+    <section id="user-data">
+        <h2>User Data</h2>
+        <ul id="user-list">
+            <!-- User data will be displayed here -->
+        </ul>
+    </section>
+
+    <!-- JavaScript files -->
+    <script src="scripts.js"></script>
+</body>
+</html>

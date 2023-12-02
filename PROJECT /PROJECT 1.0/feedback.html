@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Redressal</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const feedbackForm = document.getElementById("feedback-form");
+    const feedbackOutput = document.getElementById("feedback-output");
+
+    feedbackForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get user input
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const feedbackText = document.getElementById("feedback").value;
+
+        // Generate a random token (you can use a more robust method in production)
+        const token = generateToken();
+
+        // Display the submitted feedback and token
+        const outputText = `Name: ${name}<br>Email: ${email}<br>Feedback: ${feedbackText}<br>Token: ${token}`;
+        feedbackOutput.innerHTML = outputText;
+
+        // Clear the form fields
+        feedbackForm.reset();
+    });
+
+    // Function to generate a random token (for demonstration purposes)
+    function generateToken() {
+        return Math.floor(Math.random() * 1000000);
+    }
+});
+</script>
+<style>
+    /* Basic styling, customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0078d4;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0057a3;
+}
+
+/* Display area for the submitted feedback and token */
+#feedback-output {
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Responsive styling for iframes */
+iframe {
+    width: 100%;
+    height: 400px;
+}
+</style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Feedback Submission Form -->
+    <section id="feedback-submission">
+        <h2>Feedback Redressal</h2>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Display the submitted feedback and token here -->
+        <div id="feedback-output">
+            <!-- Feedback and token will be displayed here -->
+        </div>
+    </section>
+
+    <!-- JavaScript files -->
+    <script src="scripts.js"></script>
+</body>
+</html>

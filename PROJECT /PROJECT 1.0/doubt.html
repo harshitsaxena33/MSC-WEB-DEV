@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubt Redressal</title>
+    <style>
+        /* Basic styling, customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0078d4;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0057a3;
+}
+
+/* Display area for the submitted doubt and token */
+#doubt-output {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Responsive styling for iframes */
+iframe {
+    width: 100%;
+    height: 400px;
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // You can add code here to send the form data to a server or handle it as needed.
+
+        // For this example, let's just show an alert.
+        alert("Form submitted successfully!");
+    });
+});
+</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Doubt Submission Form -->
+    <section id="doubt-submission">
+        <h2>Doubt Redressal</h2>
+        <form id="doubt-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doubt">Doubt:</label>
+            <textarea id="doubt" name="doubt" rows="4" required></textarea>
+
+            <button type="submit">Submit Doubt</button>
+        </form>
+
+        <!-- Display the submitted doubt and token here -->
+        <div id="doubt-output">
+            <!-- Doubt and token will be displayed here -->
+        </div>
+    </section>
+
+    <!-- JavaScript files -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <style>
+        /* Basic styling, customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.event {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px;
+}
+
+.event-media {
+    flex: 1;
+}
+
+.event-media img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-media video {
+    max-width: 100%;
+}
+
+.event-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.event h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.event p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+</style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Resources</h1>
+        <p>Stay updated with our exciting resources</p>
+    </header>
+
+    <!-- Event 1 -->
+    <section class="event">
+        <div class="event-media">
+            <img src="event1.jpg" alt="Event 1">
+        </div>
+        <div class="event-details">
+            <h2>Event 1: Lorem Ipsum</h2>
+            <p>Date: January 1, 2023</p>
+            <p>Location: City Hall</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
+    <!-- Event 2 -->
+    <section class="event">
+        <div class="event-media">
+            <video controls>
+                <source src="event2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="event-details">
+            <h2>Event 2: Video Showcase</h2>
+            <p>Date: February 15, 2023</p>
+            <p>Location: Online</p>
+            <p>Description: Watch our latest video showcase featuring exciting content.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript files -->
+    <script src="animations.js"></script>
+</body>
+</html>
